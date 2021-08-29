@@ -27,7 +27,7 @@ class TimerView extends StatelessWidget {
                   RaisedButton(
                     onPressed: () {
                       Navigator.of(context).pop(scheduleNotification25.call());
-                      showActionSnackbar(context);
+                    
                     },
                     child: Text('INICIAR 25 MINUTOS'),
                     color: Colors.green,
@@ -42,7 +42,7 @@ class TimerView extends StatelessWidget {
                   RaisedButton(
                     onPressed: () {
                       Navigator.of(context).pop(scheduleNotification35.call());
-                      showActionSnackbar(context);
+                    
                     },
                     child: Text('INICIAR 35 MINUTOS'),
                     color: Colors.green,
@@ -109,15 +109,5 @@ class TimerView extends StatelessWidget {
         androidAllowWhileIdle: true);
   }
 
-  void showActionSnackbar(BuildContext context) {
-    final snackbar = SnackBar(
-      content: Text(
-        'Contador silencioso iniciado',
-        style: TextStyle(fontSize: 16),
-        textAlign: TextAlign.center,
-      ),
-     
-    );
-    ScaffoldMessenger.of(context).showSnackBar(snackbar);
-  }
+
 }

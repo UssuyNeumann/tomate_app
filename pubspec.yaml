@@ -1,0 +1,62 @@
+name: tomate_app
+description: Um simples app de pomodoro.
+
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  moor_flutter: ^1.4.0
+ 
+  provider: ^4.3.3
+  flutter_slidable: ^0.5.7
+  flutter_localizations:
+    sdk: flutter
+  intl:
+
+  cupertino_icons: ^0.1.3
+  flutter_local_notifications: ^1.4.4+4
+  share: ^0.6.5+1
+  firebase_admob: ^0.9.3
+  firebase_core: ^0.4.2+1
+
+  shared_preferences: ^0.5.2
+  url_launcher: ^5.7.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: 
+  moor_generator: ^1.4.0
+  
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - images/tomateapp.png
+    - images/icone_timer.png
+    - images/iniciar_25.png
+
+  fonts:
+  - family: Viga
+    fonts:
+      - asset: fonts/Viga-Regular.ttf
+
+  - family: Handlee
+    fonts:
+      - asset: fonts/Handlee-Regular.ttf
+
+  - family: Roboto
+    fonts:
+      - asset: fonts/Roboto-Regular.ttf
+

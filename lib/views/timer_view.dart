@@ -116,10 +116,7 @@ class TimerView extends StatelessWidget {
         style: TextStyle(fontSize: 16),
         textAlign: TextAlign.center,
       ),
-      duration: Duration(seconds: 1),
-      backgroundColor: Colors.redAccent,
-      behavior: SnackBarBehavior.floating,
-      margin: EdgeInsets.symmetric(vertical: 64, horizontal: 16),
+     
     );
     ScaffoldMessenger.of(context).showSnackBar(snackbar);
   }
